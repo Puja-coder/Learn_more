@@ -1,0 +1,8 @@
+def solution(S):
+    # write your code in Python 3.6
+    S_list = [S[i:i+2] for i in range(len(S)-1)]
+    S_list.sort(reverse=True)
+    print(int(S_list[0]))
+    return int(S_list[0])
+
+solution("50552")
